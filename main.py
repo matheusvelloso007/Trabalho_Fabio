@@ -1,9 +1,3 @@
-
-# ==========================================
-# TRABALHO FABIO - ESTRUTURAS DE DADOS
-# PILHA, FILA, FILA CIRCULAR E ORDENACAO
-# ==========================================
-
 # Variaveis principais
 dados = []
 tamanho = 0
@@ -15,9 +9,9 @@ fim = 0
 quantidade = 0
 
 
-# ==========================================
+
 # FUNCAO PARA LER NUMEROS INTEIROS
-# ==========================================
+
 
 def ler_inteiro(mensagem):
     while True:
@@ -27,9 +21,9 @@ def ler_inteiro(mensagem):
             print("Digite apenas numeros inteiros!")
 
 
-# ==========================================
+
 # CRIAR ESTRUTURA
-# ==========================================
+
 
 def criar_estrutura(tipo):
     global dados, tamanho, estrutura
@@ -56,9 +50,9 @@ def criar_estrutura(tipo):
     print(tipo, "criada com sucesso!")
 
 
-# ==========================================
+
 # ARMAZENAR VALOR - PUSH / ENQUEUE
-# ==========================================
+
 
 def armazenar_valor():
     global fim, quantidade
@@ -85,9 +79,9 @@ def armazenar_valor():
     print("Valor armazenado com sucesso!")
 
 
-# ==========================================
+
 # EXTRAIR VALOR - POP / DEQUEUE
-# ==========================================
+
 
 def extrair_valor():
     global inicio, quantidade
@@ -124,9 +118,9 @@ def extrair_valor():
     print("Valor extraido:", valor)
 
 
-# ==========================================
+
 # OBTER CONTEUDO DA ESTRUTURA
-# ==========================================
+
 
 def obter_conteudo():
     if estrutura == "FILA CIRCULAR":
@@ -138,9 +132,9 @@ def obter_conteudo():
     return dados.copy()
 
 
-# ==========================================
+
 # IMPRIMIR CONTEUDO
-# ==========================================
+
 
 def imprimir_conteudo():
     if estrutura is None:
@@ -149,9 +143,9 @@ def imprimir_conteudo():
         print("Conteudo:", obter_conteudo())
 
 
-# ==========================================
+
 # MENU DAS ESTRUTURAS
-# ==========================================
+
 
 def menu_estrutura(tipo):
     while True:
@@ -192,9 +186,9 @@ def menu_estrutura(tipo):
             print("Opcao invalida!")
 
 
-# ==========================================
+
 # BUBBLE SORT
-# ==========================================
+
 
 def bubble_sort(lista):
     n = len(lista)
@@ -206,9 +200,9 @@ def bubble_sort(lista):
                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
 
 
-# ==========================================
+
 # SELECTION SORT
-# ==========================================
+
 
 def selection_sort(lista):
     n = len(lista)
@@ -223,9 +217,9 @@ def selection_sort(lista):
         lista[i], lista[menor] = lista[menor], lista[i]
 
 
-# ==========================================
+
 # INSERTION SORT
-# ==========================================
+
 
 def insertion_sort(lista):
     for i in range(1, len(lista)):
@@ -239,9 +233,8 @@ def insertion_sort(lista):
         lista[j + 1] = valor
 
 
-# ==========================================
 # MENU DE ORDENACAO
-# ==========================================
+
 
 def ordenar(tipo):
     global dados, inicio, fim
@@ -302,9 +295,9 @@ def menu_ordenacao():
             print("Opcao invalida!")
 
 
-# ==========================================
+
 # MENU PRINCIPAL
-# ==========================================
+
 
 while True:
     print("\n========== MENU PRINCIPAL ==========")
